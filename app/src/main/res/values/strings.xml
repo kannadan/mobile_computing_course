@@ -2,9 +2,16 @@
     <string name="app_name">Notes</string>
     <string name="un">Username</string>
     <string name="pw">Password</string>
+    <string name="pwAgain">Password again</string>
     <string name="login">Login</string>
     <string name="logout">Logout</string>
     <string name="reg">Register</string>
     <string name="upcoming">This feature will be implemented at a later date</string>
     <string name="newMsg">Add reminder</string>
+    <string name="emptyField">Fill all data fields</string>
+    <string name="passMiss">Passwords do not match</string>
+    <string name="badUser">No such username</string>
+    <string name="badPass">Password does not match username</string>
+    <string name="dbFileName">com.notes.notesdb</string>
+    <string name="sharedPreference" translatable="false">com.notes.notespref</string>
 </resources>

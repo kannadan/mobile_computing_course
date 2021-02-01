@@ -1,5 +1,6 @@
 package com.example.notes
 
+import android.content.Context
 import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +25,11 @@ class Message : AppCompatActivity() {
 
         val btnOut = findViewById<Button>(R.id.logout)
         btnOut.setOnClickListener {
-            Toast.makeText(applicationContext, R.string.upcoming, Toast.LENGTH_SHORT).show()
+            applicationContext.getSharedPreferences(
+                getString(R.string.sharedPreference),
+                Context.MODE_PRIVATE
+            ).edit().remove("username").commit();
+            finish()
         }
         val btnRemind = findViewById<Button>(R.id.new_reminder)
         btnRemind.setOnClickListener {

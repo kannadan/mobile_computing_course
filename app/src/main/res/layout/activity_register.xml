@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/regUsername"
+            android:layout_width="257dp"
+            android:layout_height="69dp"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/un"
+            android:textSize="@dimen/def_text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/regPassword"
+            android:layout_width="257dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="@dimen/main_info_margin"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pw"
+            android:inputType="textPassword"
+            android:textSize="@dimen/def_text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/regPassword2"
+            android:layout_width="257dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="@dimen/main_info_margin"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pwAgain"
+            android:inputType="textPassword"
+            android:textSize="@dimen/def_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_btn_margin"
+            android:text="@string/reg" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
