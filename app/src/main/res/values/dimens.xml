@@ -3,7 +3,10 @@
     <dimen name="base_margin">16dp</dimen>
     <dimen name="login_btn_margin">50dp</dimen>
     <dimen name="main_info_margin">30dp</dimen>
+    <dimen name="reminder_top">30dp</dimen>
     <dimen name="def_text">24sp</dimen>
     <dimen name="title_text">50sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="big_button">48dp</dimen>
 
 </resources>

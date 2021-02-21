@@ -14,4 +14,8 @@
     <string name="badPass">Password does not match username</string>
     <string name="dbFileName">com.notes.notesdb</string>
     <string name="sharedPreference" translatable="false">com.notes.notespref</string>
+    <string name="msg">Message</string>
+    <string name="rem">Reminder</string>
+    <string name="del">Delete</string>
+    <string name="save">Save</string>
 </resources>

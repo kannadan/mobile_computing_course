@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/reminder_top"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rem"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autofillHints="null"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:hint="@string/msg"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/def_text"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_btn_margin"
+            android:layout_marginBottom="@dimen/base_margin"
+            android:divider="@drawable/divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end">
+
+            <TextView
+                android:id="@+id/remDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:ems="10"
+                android:textSize="@dimen/text_30" />
+
+            <ImageButton
+                android:id="@+id/timeButton"
+                android:layout_width="@dimen/big_button"
+                android:layout_height="@dimen/big_button"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_time" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_btn_margin"
+            android:layout_marginBottom="@dimen/base_margin"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <Button
+                android:id="@+id/delete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/del" />
+
+            <Button
+                android:id="@+id/save"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,20 +1,20 @@
 package com.example.notes.db
 
 
+import androidx.room.*
 
-interface DatabaseHelper {
-
-    suspend fun insert(user: User): Long
-
-    suspend fun delete(id: Int)
-
-    suspend fun getUsers(): List<User>
-    suspend fun getUser(username: String): List<User>
-
+@Dao
+interface ReminderDao {
+    @Transaction
+    @Insert
     suspend fun insertReminder(reminder: Reminder): Long
+
+    @Update
     suspend fun updateReminder(reminder: Reminder)
 
+    @Query("DELETE FROM reminders WHERE rid = :id")
     suspend fun deleteReminder(id: Int)
 
+    @Query("SELECT * FROM reminders")
     suspend fun getReminders(): List<Reminder>
 }
