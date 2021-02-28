@@ -76,6 +76,25 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkRem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind" />
+
+            <CheckBox
+                android:id="@+id/checkRep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/repeat" />
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/linearLayout2"
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"

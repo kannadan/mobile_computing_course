@@ -8,6 +8,7 @@
     <string name="reg">Register</string>
     <string name="upcoming">This feature will be implemented at a later date</string>
     <string name="newMsg">Add reminder</string>
+    <string name="showAll">Show all</string>
     <string name="emptyField">Fill all data fields</string>
     <string name="passMiss">Passwords do not match</string>
     <string name="badUser">No such username</string>
@@ -18,4 +19,6 @@
     <string name="rem">Reminder</string>
     <string name="del">Delete</string>
     <string name="save">Save</string>
+    <string name="remind">Remind</string>
+    <string name="repeat">Repeat</string>
 </resources>

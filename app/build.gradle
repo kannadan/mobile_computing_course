@@ -49,12 +49,13 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     def room_version = "2.2.6"
     def lifecycle_version = "2.2.0"
+    def work_version="2.5.0"
 
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
-
+    implementation "androidx.work:work-runtime-ktx:$work_version"
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
