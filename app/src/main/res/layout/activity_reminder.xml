@@ -92,6 +92,20 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/repeat" />
+
+            <CheckBox
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLocationClick"
+                android:text="@string/loc" />
+
+            <CheckBox
+                android:id="@+id/location_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/locCur" />
         </LinearLayout>
 
         <LinearLayout

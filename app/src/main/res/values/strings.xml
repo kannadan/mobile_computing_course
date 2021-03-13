@@ -21,4 +21,11 @@
     <string name="save">Save</string>
     <string name="remind">Remind</string>
     <string name="repeat">Repeat</string>
+    <string name="loc">Location</string>
+    <string name="locCur">Location current</string>
+    <string name="normal_map">nomnom</string>
+    <string name="hybrid_map">hypemap</string>
+    <string name="satellite_map">SPAAAAACE</string>
+    <string name="terrain_map">dirtmap</string>
+    <string name="dropped_pin">Dunno lol</string>
 </resources>
